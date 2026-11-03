@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fafafa;
+    padding: 8px;
+    font-family: Arial, sans-serif;
+    color: #292f36;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.gap8 {
+    gap: 8px;
+}
+
+.container-1000 {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Header */
+
+header {
+    height: 62px;
+    background-color: white;
+    padding: 0 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 100px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+header nav a {
+    font-size: 13px;
+    color: #292f36;
+}
+
+header nav a:hover {
+    color: #cda274;
+}
+
+/* Accueil */
+
+.bgimg {
+    min-height: 540px;
+    background-image: url("img/Banner.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 15%;
+    border-bottom-left-radius: 110px;
+}
+
+.bgimg div {
+    max-width: 380px;
+}
+
+.bgimg h1 {
+    font-family: Georgia, serif;
+    font-size: 43px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    color: #292f36;
+}
+
+.bgimg p {
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 22px;
+    color: #4d5053;
+}
+
+.bgimg a {
+    display: inline-block;
+    background-color: #292f36;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 14px 18px;
+    border-radius: 9px;
+}
+
+.bgimg a:hover {
+    background-color: #cda274;
+}
+
+/* Téléphone */
+
+@media screen and (max-width: 600px) {
+
+    header {
+        height: auto;
+        padding: 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header nav {
+        gap: 18px;
+    }
+
+    .bgimg {
+        min-height: 480px;
+        padding: 30px;
+        background-position: center;
+        border-bottom-left-radius: 70px;
+    }
+
+    .bgimg h1 {
+        font-size: 35px;
+    }
+
+    .bgimg div {
+        max-width: 300px;
+    }
+ }
+
+
+    
