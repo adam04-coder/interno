@@ -1,3 +1,6 @@
+
+/* GENERAL */
+
 * {
     margin: 0;
     padding: 0;
@@ -42,7 +45,8 @@ a {
     margin: auto;
 }
 
-/* Header */
+
+/* HEADER */
 
 header {
     height: 62px;
@@ -72,7 +76,8 @@ header nav a:hover {
     color: #cda274;
 }
 
-/* Accueil */
+
+/* PREMIERE PARTIE : ACCUEIL */
 
 .bgimg {
     min-height: 540px;
@@ -118,36 +123,255 @@ header nav a:hover {
     background-color: #cda274;
 }
 
-/* Téléphone */
 
-@media screen and (max-width: 600px) {
+/* VISION / CREATIVITE / EXECUTION */
 
-    header {
-        height: auto;
-        padding: 15px;
-        flex-direction: column;
-        gap: 15px;
-    }
+.valeurs {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: white;
+    padding: 85px 14%;
+}
 
-    header nav {
-        gap: 18px;
-    }
+.valeur {
+    width: 33.33%;
+}
 
-    .bgimg {
-        min-height: 480px;
-        padding: 30px;
-        background-position: center;
-        border-bottom-left-radius: 70px;
-    }
+.valeur h3 {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 15px;
+}
 
-    .bgimg h1 {
-        font-size: 35px;
-    }
+.valeur p {
+    font-size: 12px;
+    line-height: 1.7;
+    color: #4d5053;
+    text-align: left;
+}
 
-    .bgimg div {
-        max-width: 300px;
-    }
- }
+/* Position des titres et des textes */
+
+section:nth-of-type(2) h3:nth-of-type(1) {
+    order: 1;
+}
+
+section:nth-of-type(2) p:nth-of-type(1) {
+    order: 2;
+}
+
+section:nth-of-type(2) h3:nth-of-type(2) {
+    order: 3;
+}
+
+section:nth-of-type(2) p:nth-of-type(2) {
+    order: 4;
+}
+
+section:nth-of-type(2) h3:nth-of-type(3) {
+    order: 5;
+}
+
+section:nth-of-type(2) p:nth-of-type(3) {
+    order: 6;
+}
+
+
+/* TROISIEME PARTIE : PRESENTATION */
+
+section:nth-of-type(3) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 15%;
+    gap: 40px;
+    background-color: #fafafa;
+}
+
+section:nth-of-type(3) div {
+    max-width: 400px;
+}
+
+section:nth-of-type(3) h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+section:nth-of-type(3) p {
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+section:nth-of-type(3) a {
+    background-color: #292f36;
+    color: white;
+    padding: 13px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+section:nth-of-type(3) img {
+    width: 45%;
+    border-radius: 0 100px 0 100px;
+}
+
+
+
+/* AVIS CLIENTS */
+
+section:nth-of-type(4) {
+    background-color: #f4f0ec;
+    padding: 65px 10%;
+    border-radius: 40px;
+}
+
+.avis {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.client {
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+    width: 33.33%;
+}
+
+.profil {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.profil img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profil h2 {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.profil p {
+    font-size: 11px;
+    color: #4d5053;
+}
+
+.client > p {
+    font-size: 12px;
+    line-height: 1.7;
+    color: #4d5053;
+}
+
+
+
+/* CINQUIEME PARTIE : LOGOS */
+
+section:nth-of-type(5) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 15%;
+    gap: 35px;
+}
+
+section:nth-of-type(5) img {
+    width: 100px;
+}
+
+
+/* SIXIEME PARTIE : NOS PROJETS */
+
+section:nth-of-type(6) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 60px 15%;
+    gap: 25px;
+}
+
+section:nth-of-type(6) div:first-child {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+section:nth-of-type(6) h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+section:nth-of-type(6) p {
+    font-size: 13px;
+    color: #4d5053;
+}
+
+section:nth-of-type(6) a {
+    width: 47%;
+    margin-bottom: 25px;
+}
+
+section:nth-of-type(6) a img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 0 65px 0 0;
+}
+
+section:nth-of-type(6) h4 {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+section:nth-of-type(6) a p {
+    font-size: 12px;
+}
+
+
+/* SEPTIEME PARTIE : FOOTER */
+
+section:nth-of-type(7) {
+    background-color: #fafafa;
+    padding: 50px 15% 20px;
+    text-align: center;
+}
+
+section:nth-of-type(7) img {
+    width: 110px;
+    margin-bottom: 20px;
+}
+
+section:nth-of-type(7) p {
+    font-size: 12px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+section:nth-of-type(7) h2 {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+section:nth-of-type(7) a {
+    font-size: 13px;
+    color: #cda274;
+}
+
+
 
 
     
